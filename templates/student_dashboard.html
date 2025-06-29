@@ -1,0 +1,603 @@
+
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Student Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#121416]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em]">Academic Portal</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              
+                  <a class="text-[#121416] text-sm font-medium leading-normal" href="homepage.html">Home</a>
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="student_login.html">Student Login</a>
+              
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="faculty_login.html">Faculty Login</a>
+            
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="admin_login.html">Admin Login</a>
+              
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="courses_page.html">Courses</a>
+          
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="notices_page.html">Notices</a>
+            </div>
+          </div>
+        </header>
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-80">
+            <div class="flex h-full min-h-[700px] flex-col justify-between bg-white p-4">
+              <div class="flex flex-col gap-4">
+                <h1 class="text-[#121416] text-base font-medium leading-normal">IITVerse</h1>
+                <div class="flex flex-col gap-2">
+                  <div class="flex items-center gap-3 px-3 py-2 rounded-full bg-[#f1f2f4]">
+                    <div class="text-[#121416]" data-icon="House" data-size="24px" data-weight="fill">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#121416] text-sm font-medium leading-normal">Dashboard</p> -->
+                     <a href="student_dashboard.html">
+  <p class="text-[#121416] text-sm font-medium leading-normal">Dashboard</p>
+</a>
+
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#121416]" data-icon="BookOpen" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#121416] text-sm font-medium leading-normal">Courses</p> -->
+                     <a href="student_courses.html">
+  <p class="text-[#121416] text-sm font-medium leading-normal">Courses</p>
+</a>
+
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#121416]" data-icon="File" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#121416] text-sm font-medium leading-normal">Assignments</p> -->
+                     <a href="student_assignments.html">
+  <p class="text-[#121416] text-sm font-medium leading-normal">Assignments</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#121416]" data-icon="PresentationChart" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176ZM104,120v24a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32-16v40a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32-16v56a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#121416] text-sm font-medium leading-normal">Grades</p> -->
+                     <a href="student_grades.html">
+  <p class="text-[#121416] text-sm font-medium leading-normal">Grades</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#121416]" data-icon="User" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#121416] text-sm font-medium leading-normal">Profile</p> -->
+                     <a href="student_profile.html">
+  <p class="text-[#121416] text-sm font-medium leading-normal">Profile</p>
+</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#121416] tracking-light text-[32px] font-bold leading-tight">Welcome back, Amelia!</p>
+                <p class="text-[#6a7581] text-sm font-normal leading-normal">Here's a snapshot of your academic progress and upcoming tasks.</p>
+              </div>
+            </div>
+            <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Upcoming Assignments</h2>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#dde0e3] bg-white">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-white">
+                      <th class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-120 px-4 py-3 text-left text-[#121416] w-[400px] text-sm font-medium leading-normal">
+                        Assignment
+                      </th>
+                      <th class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-240 px-4 py-3 text-left text-[#121416] w-[400px] text-sm font-medium leading-normal">Course</th>
+                      <th class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-360 px-4 py-3 text-left text-[#121416] w-[400px] text-sm font-medium leading-normal">
+                        Due Date
+                      </th>
+                      <th class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-480 px-4 py-3 text-left text-[#121416] w-60 text-sm font-medium leading-normal">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#dde0e3]">
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-120 h-[72px] px-4 py-2 w-[400px] text-[#121416] text-sm font-normal leading-normal">
+                        Research Paper Outline
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-240 h-[72px] px-4 py-2 w-[400px] text-[#6a7581] text-sm font-normal leading-normal">
+                        Advanced Writing Seminar
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-360 h-[72px] px-4 py-2 w-[400px] text-[#6a7581] text-sm font-normal leading-normal">
+                        Oct 26, 2024
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f1f2f4] text-[#121416] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">In Progress</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dde0e3]">
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-120 h-[72px] px-4 py-2 w-[400px] text-[#121416] text-sm font-normal leading-normal">
+                        Math Problem Set 3
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-240 h-[72px] px-4 py-2 w-[400px] text-[#6a7581] text-sm font-normal leading-normal">
+                        Calculus II
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-360 h-[72px] px-4 py-2 w-[400px] text-[#6a7581] text-sm font-normal leading-normal">
+                        Oct 28, 2024
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f1f2f4] text-[#121416] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Not Started</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dde0e3]">
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-120 h-[72px] px-4 py-2 w-[400px] text-[#121416] text-sm font-normal leading-normal">
+                        History Essay
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-240 h-[72px] px-4 py-2 w-[400px] text-[#6a7581] text-sm font-normal leading-normal">
+                        European History
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-360 h-[72px] px-4 py-2 w-[400px] text-[#6a7581] text-sm font-normal leading-normal">
+                        Nov 1, 2024
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f1f2f4] text-[#121416] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Not Started</span>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-120{display: none;}}
+                @container(max-width:240px){.table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-240{display: none;}}
+                @container(max-width:360px){.table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-360{display: none;}}
+                @container(max-width:480px){.table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-480{display: none;}}
+              </style>
+            </div>
+            <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Quick Links</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 items-center">
+                <div class="text-[#121416]" data-icon="BookOpen" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#121416] text-base font-bold leading-tight">Course Materials</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 items-center">
+                <div class="text-[#121416]" data-icon="Calendar" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#121416] text-base font-bold leading-tight">Academic Calendar</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 items-center">
+                <div class="text-[#121416]" data-icon="Presentation" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#121416] text-base font-bold leading-tight">Presentation Schedule</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 items-center">
+                <div class="text-[#121416]" data-icon="UsersThree" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#121416] text-base font-bold leading-tight">Study Groups</h2>
+              </div>
+            </div>
+            <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Announcements</h2>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#6a7581] text-sm font-normal leading-normal">New</p>
+                  <p class="text-[#121416] text-base font-bold leading-tight">Important Update: Midterm Exam Schedule</p>
+                  <p class="text-[#6a7581] text-sm font-normal leading-normal">
+                    The midterm exam schedule for the Fall 2024 semester has been released. Please check the schedule for your respective courses.
+                  </p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQd3OsfG9VXdT-RQlyP3X6kNv6pVbVJld4QGgG923jv-mQ8s_g4TLaCX-X6qYwtMH-kd_LRGvdE-TH6yUVNZ2bjtpNdHV6_YPErKu7zPriUuMKdaDJxiOdnbohma1wry8carpFglsMRDhy0gfXFu2RjUhHxOfE15zi1mYvt8spxdhdGxYzhNuRPxXCJu-AOWNg6bTsrtLVFDN9p4AJ2tXt0b3vO1tyg4V6tAmAijmzPwRDm02cr0FcuJferiCnjG38dtiJzxsr7oM");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#121416] text-base font-bold leading-tight">Career Fair Registration Open</p>
+                  <p class="text-[#6a7581] text-sm font-normal leading-normal">
+                    Register now for the upcoming Career Fair to connect with potential employers and explore internship opportunities.
+                  </p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8OzRA6T9AljYGWM8CZn8sbt2mY83HJd-glHHDpGpbrnru2OqQh3ml3JoY9pulNX6ZHQC15diS1mcSThXayou5FJg2mqu_Is2qbD_JOt4HizWXFgYFlClHFpRt7XZzojeAMygWeWHfv-ao2mkwDFSXQk2nrzFf7BgSvbshtBmtaf9lOsQkZ57oNrU7L8BulpPCWuWZRRtwErGfPsbVw-qUJ08NcP0OFinaPrAUY8_2S9q7FhMkws8mRToBAjR8pvxc1EqfpPeQKtg");'
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              </div>
+              <p class="text-[#6a7581] text-base font-normal leading-normal">© 2025 IITVerse. All rights reserved.</p>
+            </footer>
+      </div>
+    </div>
+  </body>
+</html>
+=======
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Student Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#121416]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em]">Academic Portal</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              
+                  <a class="text-[#121416] text-sm font-medium leading-normal" href="homepage.html">Home</a>
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="student_login.html">Student Login</a>
+              
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="faculty_login.html">Faculty Login</a>
+            
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="admin_login.html">Admin Login</a>
+              
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="courses_page.html">Courses</a>
+          
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="notices_page.html">Notices</a>
+            </div>
+          </div>
+        </header>
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-80">
+            <div class="flex h-full min-h-[700px] flex-col justify-between bg-white p-4">
+              <div class="flex flex-col gap-4">
+                <h1 class="text-[#121416] text-base font-medium leading-normal">IITVerse</h1>
+                <div class="flex flex-col gap-2">
+                  <div class="flex items-center gap-3 px-3 py-2 rounded-full bg-[#f1f2f4]">
+                    <div class="text-[#121416]" data-icon="House" data-size="24px" data-weight="fill">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#121416] text-sm font-medium leading-normal">Dashboard</p> -->
+                     <a href="student_dashboard.html">
+  <p class="text-[#121416] text-sm font-medium leading-normal">Dashboard</p>
+</a>
+
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#121416]" data-icon="BookOpen" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#121416] text-sm font-medium leading-normal">Courses</p> -->
+                     <a href="student_courses.html">
+  <p class="text-[#121416] text-sm font-medium leading-normal">Courses</p>
+</a>
+
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#121416]" data-icon="File" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#121416] text-sm font-medium leading-normal">Assignments</p> -->
+                     <a href="student_assignments.html">
+  <p class="text-[#121416] text-sm font-medium leading-normal">Assignments</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#121416]" data-icon="PresentationChart" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176ZM104,120v24a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32-16v40a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32-16v56a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#121416] text-sm font-medium leading-normal">Grades</p> -->
+                     <a href="student_grades.html">
+  <p class="text-[#121416] text-sm font-medium leading-normal">Grades</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#121416]" data-icon="User" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#121416] text-sm font-medium leading-normal">Profile</p> -->
+                     <a href="student_profile.html">
+  <p class="text-[#121416] text-sm font-medium leading-normal">Profile</p>
+</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#121416] tracking-light text-[32px] font-bold leading-tight">Welcome back, Amelia!</p>
+                <p class="text-[#6a7581] text-sm font-normal leading-normal">Here's a snapshot of your academic progress and upcoming tasks.</p>
+              </div>
+            </div>
+            <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Upcoming Assignments</h2>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#dde0e3] bg-white">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-white">
+                      <th class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-120 px-4 py-3 text-left text-[#121416] w-[400px] text-sm font-medium leading-normal">
+                        Assignment
+                      </th>
+                      <th class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-240 px-4 py-3 text-left text-[#121416] w-[400px] text-sm font-medium leading-normal">Course</th>
+                      <th class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-360 px-4 py-3 text-left text-[#121416] w-[400px] text-sm font-medium leading-normal">
+                        Due Date
+                      </th>
+                      <th class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-480 px-4 py-3 text-left text-[#121416] w-60 text-sm font-medium leading-normal">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#dde0e3]">
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-120 h-[72px] px-4 py-2 w-[400px] text-[#121416] text-sm font-normal leading-normal">
+                        Research Paper Outline
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-240 h-[72px] px-4 py-2 w-[400px] text-[#6a7581] text-sm font-normal leading-normal">
+                        Advanced Writing Seminar
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-360 h-[72px] px-4 py-2 w-[400px] text-[#6a7581] text-sm font-normal leading-normal">
+                        Oct 26, 2024
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f1f2f4] text-[#121416] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">In Progress</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dde0e3]">
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-120 h-[72px] px-4 py-2 w-[400px] text-[#121416] text-sm font-normal leading-normal">
+                        Math Problem Set 3
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-240 h-[72px] px-4 py-2 w-[400px] text-[#6a7581] text-sm font-normal leading-normal">
+                        Calculus II
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-360 h-[72px] px-4 py-2 w-[400px] text-[#6a7581] text-sm font-normal leading-normal">
+                        Oct 28, 2024
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f1f2f4] text-[#121416] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Not Started</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dde0e3]">
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-120 h-[72px] px-4 py-2 w-[400px] text-[#121416] text-sm font-normal leading-normal">
+                        History Essay
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-240 h-[72px] px-4 py-2 w-[400px] text-[#6a7581] text-sm font-normal leading-normal">
+                        European History
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-360 h-[72px] px-4 py-2 w-[400px] text-[#6a7581] text-sm font-normal leading-normal">
+                        Nov 1, 2024
+                      </td>
+                      <td class="table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#f1f2f4] text-[#121416] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Not Started</span>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-120{display: none;}}
+                @container(max-width:240px){.table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-240{display: none;}}
+                @container(max-width:360px){.table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-360{display: none;}}
+                @container(max-width:480px){.table-dd2b4dae-f089-41e6-98d6-7fadc1cd8921-column-480{display: none;}}
+              </style>
+            </div>
+            <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Quick Links</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 items-center">
+                <div class="text-[#121416]" data-icon="BookOpen" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#121416] text-base font-bold leading-tight">Course Materials</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 items-center">
+                <div class="text-[#121416]" data-icon="Calendar" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#121416] text-base font-bold leading-tight">Academic Calendar</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 items-center">
+                <div class="text-[#121416]" data-icon="Presentation" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#121416] text-base font-bold leading-tight">Presentation Schedule</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 items-center">
+                <div class="text-[#121416]" data-icon="UsersThree" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-[#121416] text-base font-bold leading-tight">Study Groups</h2>
+              </div>
+            </div>
+            <h2 class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Announcements</h2>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#6a7581] text-sm font-normal leading-normal">New</p>
+                  <p class="text-[#121416] text-base font-bold leading-tight">Important Update: Midterm Exam Schedule</p>
+                  <p class="text-[#6a7581] text-sm font-normal leading-normal">
+                    The midterm exam schedule for the Fall 2024 semester has been released. Please check the schedule for your respective courses.
+                  </p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQd3OsfG9VXdT-RQlyP3X6kNv6pVbVJld4QGgG923jv-mQ8s_g4TLaCX-X6qYwtMH-kd_LRGvdE-TH6yUVNZ2bjtpNdHV6_YPErKu7zPriUuMKdaDJxiOdnbohma1wry8carpFglsMRDhy0gfXFu2RjUhHxOfE15zi1mYvt8spxdhdGxYzhNuRPxXCJu-AOWNg6bTsrtLVFDN9p4AJ2tXt0b3vO1tyg4V6tAmAijmzPwRDm02cr0FcuJferiCnjG38dtiJzxsr7oM");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#121416] text-base font-bold leading-tight">Career Fair Registration Open</p>
+                  <p class="text-[#6a7581] text-sm font-normal leading-normal">
+                    Register now for the upcoming Career Fair to connect with potential employers and explore internship opportunities.
+                  </p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8OzRA6T9AljYGWM8CZn8sbt2mY83HJd-glHHDpGpbrnru2OqQh3ml3JoY9pulNX6ZHQC15diS1mcSThXayou5FJg2mqu_Is2qbD_JOt4HizWXFgYFlClHFpRt7XZzojeAMygWeWHfv-ao2mkwDFSXQk2nrzFf7BgSvbshtBmtaf9lOsQkZ57oNrU7L8BulpPCWuWZRRtwErGfPsbVw-qUJ08NcP0OFinaPrAUY8_2S9q7FhMkws8mRToBAjR8pvxc1EqfpPeQKtg");'
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              </div>
+              <p class="text-[#6a7581] text-base font-normal leading-normal">© 2025 IITVerse. All rights reserved.</p>
+            </footer>
+      </div>
+    </div>
+  </body>
+</html>
+>>>>>>> edb1f13 (homepage.html change)

@@ -1,0 +1,603 @@
+
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Faculty Grades</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+         <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#121416]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em]">Academic Portal</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              
+                  <a class="text-[#121416] text-sm font-medium leading-normal" href="homepage.html">Home</a>
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="student_login.html">Student Login</a>
+              
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="faculty_login.html">Faculty Login</a>
+            
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="admin_login.html">Admin Login</a>
+              
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="courses_page.html">Courses</a>
+          
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="notices_page.html">Notices</a>
+            </div>
+          </div>
+        </header>
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-80">
+            <div class="flex h-full min-h-[700px] flex-col justify-between bg-white p-4">
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-3">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvuQ8o9xHiiDwHnN_pnq4HIInKm6zgJMH4Jhc2Pw2QI5RFqll5iHV5ijriwRaGpDbLLUKu1X0LEyvHpnYJzRrq1V2xtv6s0B5ksHqK5wlK0ZpjOiGME334NQwutyLL8qzU_qqrJ4mbUY8tl3CAucStEUQLJPA0YBBpKLbVRANHHUcf1dz68zk2JrxYCECmVAGcrZDMj218J82udcpUHtxruEc8DfoLG0tWGNsklB3CLt91d8NNag4ARcNtEB6hQMSfHFzpppFduUg");'
+                  ></div>
+                  <h1 class="text-[#111418] text-base font-medium leading-normal">Dr. Olivia Bennett</h1>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#111418]" data-icon="House" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Dashboard</p> -->
+                      <a href="faculty_dashboard.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Dashboard</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#111418]" data-icon="BookOpen" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Courses</p> -->
+                      <a href="faculty_courses.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Courses</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#111418]" data-icon="File" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Assignments</p> -->
+                      <a href="faculty_assignments.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Assignments</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2 rounded-full bg-[#f0f2f5]">
+                    <div class="text-[#111418]" data-icon="PresentationChart" data-size="24px" data-weight="fill">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM104,144a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32,0a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32,0a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Grades</p> -->
+                      <a href="faculty_grades.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Grades</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#111418]" data-icon="ChatCircleDots" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Communication</p> -->
+                      <a href="faculty_communication.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Communication</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#111418]" data-icon="Bookmark" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M184,32H72A16,16,0,0,0,56,48V224a8,8,0,0,0,12.24,6.78L128,193.43l59.77,37.35A8,8,0,0,0,200,224V48A16,16,0,0,0,184,32Zm0,16V161.57l-51.77-32.35a8,8,0,0,0-8.48,0L72,161.56V48ZM132.23,177.22a8,8,0,0,0-8.48,0L72,209.57V180.43l56-35,56,35v29.14Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Resources</p> -->
+                      <a href="faculty_resources.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Resources</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#111418]" data-icon="User" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Profile</p> -->
+                      <a href="faculty_profile.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Profile</p>
+</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight">Grades</p>
+                <p class="text-[#60758a] text-sm font-normal leading-normal">Manage and submit grades for your courses.</p>
+              </div>
+            </div>
+            <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Course: Introduction to Computer Science</h3>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#dbe0e6] bg-white">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-white">
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Student Name
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Student ID
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Assignment 1
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Assignment 2
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Midterm Exam
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Final Exam
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Final Grade
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960 px-4 py-3 text-left text-[#111418] w-60 text-[#60758a] text-sm font-medium leading-normal">
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#dbe0e6]">
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                        Lucas Bennett
+                      </td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">123456</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">85</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">90</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">78</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">88</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">A</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960 h-[72px] px-4 py-2 w-60 text-[#60758a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe0e6]">
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                        Sophia Carter
+                      </td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">654321</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">92</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">88</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">95</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">91</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">A+</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960 h-[72px] px-4 py-2 w-60 text-[#60758a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe0e6]">
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                        Owen Hayes
+                      </td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">789012</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">76</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">82</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">70</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">75</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">B</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960 h-[72px] px-4 py-2 w-60 text-[#60758a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe0e6]">
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                        Chloe Thompson
+                      </td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">210987</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">88</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">95</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">85</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">92</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">A</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960 h-[72px] px-4 py-2 w-60 text-[#60758a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe0e6]">
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                        Jackson Walker
+                      </td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">321654</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">65</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">70</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">60</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">68</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">C</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960 h-[72px] px-4 py-2 w-60 text-[#60758a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120{display: none;}}
+                @container(max-width:240px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240{display: none;}}
+                @container(max-width:360px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360{display: none;}}
+                @container(max-width:480px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480{display: none;}}
+                @container(max-width:600px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600{display: none;}}
+                @container(max-width:720px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720{display: none;}}
+                @container(max-width:840px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840{display: none;}}
+                @container(max-width:960px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960{display: none;}}
+              </style>
+            </div>
+            <div class="flex px-4 py-3 justify-end">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#0b79ee] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Submit Grades</span>
+              </button>
+            </div>
+          </div>
+        </div>
+         <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              </div>
+              <p class="text-[#6a7581] text-base font-normal leading-normal">© 2025 IITVerse. All rights reserved.</p>
+            </footer>
+      </div>
+    </div>
+  </body>
+</html>
+=======
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Faculty Grades</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+         <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#121416]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em]">Academic Portal</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              
+                  <a class="text-[#121416] text-sm font-medium leading-normal" href="homepage.html">Home</a>
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="student_login.html">Student Login</a>
+              
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="faculty_login.html">Faculty Login</a>
+            
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="admin_login.html">Admin Login</a>
+              
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="courses_page.html">Courses</a>
+          
+                 <a class="text-[#121416] text-sm font-medium leading-normal" href="notices_page.html">Notices</a>
+            </div>
+          </div>
+        </header>
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-80">
+            <div class="flex h-full min-h-[700px] flex-col justify-between bg-white p-4">
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-3">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvuQ8o9xHiiDwHnN_pnq4HIInKm6zgJMH4Jhc2Pw2QI5RFqll5iHV5ijriwRaGpDbLLUKu1X0LEyvHpnYJzRrq1V2xtv6s0B5ksHqK5wlK0ZpjOiGME334NQwutyLL8qzU_qqrJ4mbUY8tl3CAucStEUQLJPA0YBBpKLbVRANHHUcf1dz68zk2JrxYCECmVAGcrZDMj218J82udcpUHtxruEc8DfoLG0tWGNsklB3CLt91d8NNag4ARcNtEB6hQMSfHFzpppFduUg");'
+                  ></div>
+                  <h1 class="text-[#111418] text-base font-medium leading-normal">Dr. Olivia Bennett</h1>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#111418]" data-icon="House" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Dashboard</p> -->
+                      <a href="faculty_dashboard.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Dashboard</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#111418]" data-icon="BookOpen" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Courses</p> -->
+                      <a href="faculty_courses.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Courses</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#111418]" data-icon="File" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Assignments</p> -->
+                      <a href="faculty_assignments.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Assignments</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2 rounded-full bg-[#f0f2f5]">
+                    <div class="text-[#111418]" data-icon="PresentationChart" data-size="24px" data-weight="fill">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM104,144a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32,0a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32,0a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Grades</p> -->
+                      <a href="faculty_grades.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Grades</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#111418]" data-icon="ChatCircleDots" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Communication</p> -->
+                      <a href="faculty_communication.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Communication</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#111418]" data-icon="Bookmark" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M184,32H72A16,16,0,0,0,56,48V224a8,8,0,0,0,12.24,6.78L128,193.43l59.77,37.35A8,8,0,0,0,200,224V48A16,16,0,0,0,184,32Zm0,16V161.57l-51.77-32.35a8,8,0,0,0-8.48,0L72,161.56V48ZM132.23,177.22a8,8,0,0,0-8.48,0L72,209.57V180.43l56-35,56,35v29.14Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Resources</p> -->
+                      <a href="faculty_resources.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Resources</p>
+</a>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#111418]" data-icon="User" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Profile</p> -->
+                      <a href="faculty_profile.html">
+  <p class="text-[#111418] text-sm font-medium leading-normal">Profile</p>
+</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight">Grades</p>
+                <p class="text-[#60758a] text-sm font-normal leading-normal">Manage and submit grades for your courses.</p>
+              </div>
+            </div>
+            <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Course: Introduction to Computer Science</h3>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#dbe0e6] bg-white">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-white">
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Student Name
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Student ID
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Assignment 1
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Assignment 2
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Midterm Exam
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Final Exam
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                        Final Grade
+                      </th>
+                      <th class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960 px-4 py-3 text-left text-[#111418] w-60 text-[#60758a] text-sm font-medium leading-normal">
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#dbe0e6]">
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                        Lucas Bennett
+                      </td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">123456</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">85</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">90</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">78</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">88</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">A</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960 h-[72px] px-4 py-2 w-60 text-[#60758a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe0e6]">
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                        Sophia Carter
+                      </td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">654321</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">92</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">88</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">95</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">91</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">A+</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960 h-[72px] px-4 py-2 w-60 text-[#60758a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe0e6]">
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                        Owen Hayes
+                      </td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">789012</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">76</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">82</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">70</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">75</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">B</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960 h-[72px] px-4 py-2 w-60 text-[#60758a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe0e6]">
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                        Chloe Thompson
+                      </td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">210987</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">88</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">95</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">85</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">92</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">A</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960 h-[72px] px-4 py-2 w-60 text-[#60758a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#dbe0e6]">
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                        Jackson Walker
+                      </td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">321654</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">65</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">70</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">60</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">68</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840 h-[72px] px-4 py-2 w-[400px] text-[#60758a] text-sm font-normal leading-normal">C</td>
+                      <td class="table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960 h-[72px] px-4 py-2 w-60 text-[#60758a] text-sm font-bold leading-normal tracking-[0.015em]">
+                        Edit
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-120{display: none;}}
+                @container(max-width:240px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-240{display: none;}}
+                @container(max-width:360px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-360{display: none;}}
+                @container(max-width:480px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-480{display: none;}}
+                @container(max-width:600px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-600{display: none;}}
+                @container(max-width:720px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-720{display: none;}}
+                @container(max-width:840px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-840{display: none;}}
+                @container(max-width:960px){.table-d88e831d-5ac2-4d6a-afd2-856c0e6102be-column-960{display: none;}}
+              </style>
+            </div>
+            <div class="flex px-4 py-3 justify-end">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#0b79ee] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Submit Grades</span>
+              </button>
+            </div>
+          </div>
+        </div>
+         <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              </div>
+              <p class="text-[#6a7581] text-base font-normal leading-normal">© 2025 IITVerse. All rights reserved.</p>
+            </footer>
+      </div>
+    </div>
+  </body>
+</html>
+>>>>>>> edb1f13 (homepage.html change)
