@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IITVerse - Student Login</title>
+    <title>IITVerse - Register</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,28 +17,6 @@
         font-family: 'Inter', sans-serif;
       }
     </style>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
-      function handleLogin(event) {
-        // Prevent form from submitting and reloading the page
-        event.preventDefault();
-
-        // Get username and password values
-        const studentID = document.getElementById("id").value;
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
-
-        // Check if the entered username and password match
-        if (password === "1234") {
-          // Redirect to student_dashboard.html if correct
-          window.location.href = "student_dashboard.html";
-        } else {
-          // Show alert if the login details are incorrect
-          alert("Incorrect password!");
-        }
-      }
-    </script>
   </head>
   <body class="bg-white min-h-screen">
     <!-- Navbar -->
@@ -68,8 +46,8 @@
         <div class="relative group">
           <button class="hover:text-gray-300 text-lg focus:outline-none">Login ▼</button>
           <div class="absolute hidden group-hover:block group-focus-within:block right-0 mt-2 bg-white text-black rounded shadow-lg min-w-[160px] z-10">
-            <a href="register.html" class="block px-4 py-2 hover:bg-gray-100">Register</a>
-            <a href="student_login.html" class="block px-4 py-2 hover:bg-gray-100 underline">Student Login</a>
+            <a href="student_login.html" class="block px-4 py-2 hover:bg-gray-100 underline">Register</a>
+            <a href="student_login.html" class="block px-4 py-2 hover:bg-gray-100">Student Login</a>
             <a href="faculty_login.html" class="block px-4 py-2 hover:bg-gray-100">Faculty Login</a>
             <a href="admin_login.html" class="block px-4 py-2 hover:bg-gray-100">Admin Login</a>
           </div>
@@ -77,8 +55,8 @@
       </nav>
     </header>
 
-    <!--Section -->
-    <section class="flex justify-around items-center justify-center py-16 px-4 bg-white">
+    <!-- Register Form Section -->
+    <section class="flex items-center justify-center py-16 px-4 bg-white">
       <div class="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
         <!-- Logo -->
         <div class="flex flex-col items-center">
@@ -88,24 +66,24 @@
             class="w-14 h-14 mb-2"
           />
           <h1 class="text-2xl font-bold text-[#111418]">
-            <span class="text-blue-600">IIT</span>Verse
+            <span class="text-[#0b9444]">IIT</span>Verse
           </h1>
           <p class="text-sm text-gray-500">Academic Portal</p>
         </div>
 
         <!-- Title -->
         <h2 class="text-xl font-semibold text-center mt-6 mb-4">
-          Student Login
+          Create an Account
         </h2>
 
         <!-- Form -->
-        <form onsubmit="handleLogin(event)" class="space-y-4" action="#" method="POST">
+        <form class="space-y-4" action="#" method="POST">
           <div>
-            <label class="block text-sm font-medium text-gray-700">Student ID</label>
+            <label class="block text-sm font-medium text-gray-700">Name</label>
             <input
-              type="number"
-              name="id"
-              placeholder="info@example.com"
+              type="text"
+              name="name"
+              placeholder="Full Name"
               required
               class="mt-1 w-full px-4 py-3 border border-gray-200 rounded-md bg-[#fff7f1] text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
@@ -134,7 +112,7 @@
           <!-- Submit -->
           <button
             type="submit"
-            class="w-full bg-gradient-to-r from-blue-600 to-blue-400 text-white font-semibold py-3 rounded-md hover:opacity-90 transition"
+            class="w-full bg-gradient-to-r from-green-600 to-green-400 text-white font-semibold py-3 rounded-md hover:opacity-90 transition"
           >
             Submit
           </button>
@@ -168,22 +146,6 @@
           </a>
         </p>
       </div>
-
-      <div class="hidden md:block">
-    <lottie-player
-      src="https://assets5.lottiefiles.com/packages/lf20_puciaact.json"
-      background="transparent"
-      speed="1"
-      style="width: 350px; height: 350px;"
-      loop
-      autoplay>
-    </lottie-player>
-  </div>
     </section>
   </body>
 </html>
-
-
-
-
-

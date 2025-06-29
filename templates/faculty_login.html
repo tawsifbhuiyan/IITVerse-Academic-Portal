@@ -1,245 +1,187 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IITVerse - Faculty login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
-    <title>Faculty Login</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
       function handleLogin(event) {
-        // Prevent the default form submission behavior
+        // Prevent form from submitting and reloading the page
         event.preventDefault();
 
-        // Get the username and password values
-        const username = document.getElementById("username").value;
+        // Get username and password values
+        const facultyID = document.getElementById("id").value;
+        const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
 
-        // Check if the entered username and password are correct
-        if (username === "admin" && password === "1234") {
-          // Redirect to faculty_dashboard.html if the login is successful
-          window.location.href = "faculty_dashboard.html";
+        // Check if the entered username and password match
+        if (password === "1234") {
+          // Redirect to student_dashboard.html if correct
+          window.location.href = "student_dashboard.html";
         } else {
-          // If the credentials are incorrect, show an alert
-          alert("Incorrect username or password!");
+          // Show alert if the login details are incorrect
+          alert("Incorrect password!");
         }
       }
     </script>
   </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f5] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#111418]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Acme University</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#121416] text-sm font-medium leading-normal" href="homepage.html">Home</a>
-              <a class="text-[#121416] text-sm font-medium leading-normal" href="student_login.html">Student Login</a>
-              <a class="text-[#121416] text-sm font-medium leading-normal" href="faculty_login.html">Faculty Login</a>
-              <a class="text-[#121416] text-sm font-medium leading-normal" href="admin_login.html">Admin Login</a>
-              <a class="text-[#121416] text-sm font-medium leading-normal" href="courses_page.html">Courses</a>
-              <a class="text-[#121416] text-sm font-medium leading-normal" href="notices_page.html">Notices</a>
-            </div>
-          </div>
-        </header>
+  <body class="bg-white min-h-screen">
+    <!-- Navbar -->
+    <header class="flex items-center justify-between bg-red-900 px-10 py-8 border-b border-[#f1f2f4]">
+      <!-- Left -->
+      <div class="flex items-center gap-3">
+        <div class="w-6 h-6 text-white">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+        <h2 class="text-white text-3xl font-bold">Academic Portal</h2>
+      </div>
 
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
-            <h2 class="text-[#111418] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Faculty Login</h2>
+      <!-- Right -->
+      <nav class="flex items-center gap-8 text-white">
+        <a href="homepage.html" class="hover:text-gray-300 text-lg ">Home</a>
+        <a href="courses_page.html" class="hover:text-gray-300 text-lg ">Courses</a>
+        <a href="notices_page.html" class="hover:text-gray-300 text-lg ">Notices</a>
 
-            <!-- Form Starts Here -->
-            <form onsubmit="handleLogin(event)">
-              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-                <label class="flex flex-col min-w-40 flex-1">
-                  <p class="text-[#111418] text-base font-medium leading-normal pb-2">Username</p>
-                  <input
-                    id="username"
-                    placeholder="Enter your username"
-                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dbe0e6] bg-white focus:border-[#dbe0e6] h-14 placeholder:text-[#60758a] p-[15px] text-base font-normal leading-normal"
-                    value=""
-                  />
-                </label>
-              </div>
-
-              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-                <label class="flex flex-col min-w-40 flex-1">
-                  <p class="text-[#111418] text-base font-medium leading-normal pb-2">Password</p>
-                  <input
-                    id="password"
-                    placeholder="Enter your password"
-                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dbe0e6] bg-white focus:border-[#dbe0e6] h-14 placeholder:text-[#60758a] p-[15px] text-base font-normal leading-normal"
-                    value=""
-                    type="password"
-                  />
-                </label>
-              </div>
-
-              <div class="flex px-4 py-3">
-                <button
-                  type="submit"
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 flex-1 bg-[#0b79ee] text-white text-sm font-bold leading-normal tracking-[0.015em]"
-                >
-                  <span class="truncate">Login</span>
-                </button>
-              </div>
-            </form>
-
-            <p class="text-[#60758a] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline">Forgot Password?</p>
+        <!-- Dropdown for Login -->
+        <div class="relative group">
+          <button class="hover:text-gray-300 text-lg focus:outline-none">Login ▼</button>
+          <div class="absolute hidden group-hover:block group-focus-within:block right-0 mt-2 bg-white text-black rounded shadow-lg min-w-[160px] z-10">
+            <a href="register.html" class="block px-4 py-2 hover:bg-gray-100">Register</a>
+            <a href="student_login.html" class="block px-4 py-2 hover:bg-gray-100 ">Student Login</a>
+            <a href="faculty_login.html" class="block px-4 py-2 hover:bg-gray-100 underline">Faculty Login</a>
+            <a href="admin_login.html" class="block px-4 py-2 hover:bg-gray-100">Admin Login</a>
           </div>
         </div>
+      </nav>
+    </header>
 
-       
-          </div>
-        </footer>
-      </div>
-       <footer class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Terms of Use</a>
-                <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
-                <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Accessibility</a>
-              </div>
-              <p class="text-[#60758a] text-base font-normal leading-normal">© 2023 Acme University. All rights reserved.</p>
-            </footer>
-    </div>
-  </body>
-</html>
-=======
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
-    <title>Faculty Login</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
-      function handleLogin(event) {
-        // Prevent the default form submission behavior
-        event.preventDefault();
-
-        // Get the username and password values
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
-
-        // Check if the entered username and password are correct
-        if (username === "admin" && password === "1234") {
-          // Redirect to faculty_dashboard.html if the login is successful
-          window.location.href = "faculty_dashboard.html";
-        } else {
-          // If the credentials are incorrect, show an alert
-          alert("Incorrect username or password!");
-        }
-      }
-    </script>
-  </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f5] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#111418]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Acme University</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#121416] text-sm font-medium leading-normal" href="homepage.html">Home</a>
-              <a class="text-[#121416] text-sm font-medium leading-normal" href="student_login.html">Student Login</a>
-              <a class="text-[#121416] text-sm font-medium leading-normal" href="faculty_login.html">Faculty Login</a>
-              <a class="text-[#121416] text-sm font-medium leading-normal" href="admin_login.html">Admin Login</a>
-              <a class="text-[#121416] text-sm font-medium leading-normal" href="courses_page.html">Courses</a>
-              <a class="text-[#121416] text-sm font-medium leading-normal" href="notices_page.html">Notices</a>
-            </div>
-          </div>
-        </header>
-
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
-            <h2 class="text-[#111418] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Faculty Login</h2>
-
-            <!-- Form Starts Here -->
-            <form onsubmit="handleLogin(event)">
-              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-                <label class="flex flex-col min-w-40 flex-1">
-                  <p class="text-[#111418] text-base font-medium leading-normal pb-2">Username</p>
-                  <input
-                    id="username"
-                    placeholder="Enter your username"
-                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dbe0e6] bg-white focus:border-[#dbe0e6] h-14 placeholder:text-[#60758a] p-[15px] text-base font-normal leading-normal"
-                    value=""
-                  />
-                </label>
-              </div>
-
-              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-                <label class="flex flex-col min-w-40 flex-1">
-                  <p class="text-[#111418] text-base font-medium leading-normal pb-2">Password</p>
-                  <input
-                    id="password"
-                    placeholder="Enter your password"
-                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dbe0e6] bg-white focus:border-[#dbe0e6] h-14 placeholder:text-[#60758a] p-[15px] text-base font-normal leading-normal"
-                    value=""
-                    type="password"
-                  />
-                </label>
-              </div>
-
-              <div class="flex px-4 py-3">
-                <button
-                  type="submit"
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 flex-1 bg-[#0b79ee] text-white text-sm font-bold leading-normal tracking-[0.015em]"
-                >
-                  <span class="truncate">Login</span>
-                </button>
-              </div>
-            </form>
-
-            <p class="text-[#60758a] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline">Forgot Password?</p>
-          </div>
+    <!--Section -->
+    <section class="flex justify-around items-center justify-center py-16 px-4 bg-white">
+      <div class="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
+        <!-- Logo -->
+        <div class="flex flex-col items-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2202/2202112.png"
+            alt="Logo"
+            class="w-14 h-14 mb-2"
+          />
+          <h1 class="text-2xl font-bold text-[#111418]">
+            <span class="text-yellow-600">IIT</span>Verse
+          </h1>
+          <p class="text-sm text-gray-500">Academic Portal</p>
         </div>
 
-       
+        <!-- Title -->
+        <h2 class="text-xl font-semibold text-center mt-6 mb-4">
+          Faculty Login
+        </h2>
+
+        <!-- Form -->
+        <form onsubmit="handleLogin(event)" class="space-y-4" action="#" method="POST">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Faculty ID</label>
+            <input
+              type="number"
+              name="id"
+              placeholder="info@example.com"
+              required
+              class="mt-1 w-full px-4 py-3 border border-gray-200 rounded-md bg-[#fff7f1] text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
           </div>
-        </footer>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="info@example.com"
+              required
+              class="mt-1 w-full px-4 py-3 border border-gray-200 rounded-md bg-[#fff7f1] text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Password</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="********"
+              required
+              class="mt-1 w-full px-4 py-3 border border-gray-200 rounded-md bg-[#fff7f1] text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+          </div>
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            class="w-full bg-gradient-to-r from-yellow-600 to-yellow-400 text-white font-semibold py-3 rounded-md hover:opacity-90 transition"
+          >
+            Submit
+          </button>
+        </form>
+
+        <!-- Divider -->
+        <div class="flex items-center my-6">
+          <hr class="flex-1 border-t border-gray-300" />
+          <span class="px-3 text-sm text-gray-500">Or Continue With</span>
+          <hr class="flex-1 border-t border-gray-300" />
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex justify-center space-x-4 mb-4">
+          <button class="p-3 rounded-full border hover:bg-gray-100">
+            <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" class="w-5 h-5" alt="Google" />
+          </button>
+          <button class="p-3 rounded-full border hover:bg-gray-100">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-5 h-5" alt="Facebook" />
+          </button>
+          <button class="p-3 rounded-full border hover:bg-gray-100">
+            <img src="https://cdn-icons-png.flaticon.com/512/831/831276.png" class="w-5 h-5" alt="Apple" />
+          </button>
+        </div>
+
+        <!-- Sign In link -->
+        <p class="text-center text-sm text-gray-500">
+          Already have an account?
+          <a href="student_login.html" class="text-green-600 font-medium hover:underline">
+            Sign In here
+          </a>
+        </p>
       </div>
-       <footer class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Terms of Use</a>
-                <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
-                <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Accessibility</a>
-              </div>
-              <p class="text-[#60758a] text-base font-normal leading-normal">© 2023 Acme University. All rights reserved.</p>
-            </footer>
-    </div>
+
+      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+
+      <div class="hidden md:block">
+    <!-- <lottie-player
+      src="https://assets5.lottiefiles.com/packages/lf20_puciaact.json"
+      background="transparent"
+      speed="1"
+      style="width: 350px; height: 350px;"
+      loop
+      autoplay>
+    </lottie-player> -->
+  </div>
+    </section>
   </body>
 </html>
->>>>>>> edb1f13 (homepage.html change)
