@@ -17,53 +17,49 @@
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-         <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#121416]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <h2 class="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em]">Academic Portal</h2>
+         <header class="flex items-center justify-between bg-red-900 px-10 py-5 shadow-md">
+      <div class="flex items-center gap-3">
+        <div class="w-6 h-6 text-white">
+          <svg viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.08 24L4 19.25 9.96 8.75 18.04 13.5 18.04 4H29.96V13.5L38.04 8.75 44 19.25 35.92 24 44 28.75 38.04 39.25 29.96 34.5 29.96 44H18.04V34.5L9.96 39.25 4 28.75 12.08 24Z"
+            />
+          </svg>
+        </div>
+        <h1 class="text-white text-3xl font-bold">Academic Portal</h1>
+      </div>
+      <nav class="flex items-center gap-8 text-white text-lg">
+        <a href="homepage.html" class="hover:underline hover:text-gray-200">Home</a>
+        <a href="courses_page.html" class="hover:underline hover:text-gray-200">Courses</a>
+        <a href="notices_page.html" class="hover:underline hover:text-gray-200">Notices</a>
+        <div class="relative group">
+          <button class="hover:text-gray-200">Login ▼</button>
+          <div class="absolute hidden group-hover:block right-0 mt-2 bg-white text-black rounded shadow-lg w-48 z-50">
+            <a href="register.html" class="block px-4 py-2 hover:bg-gray-100">Register</a>
+            <a href="student_login.html" class="block px-4 py-2 hover:bg-gray-100">Student Login</a>
+            <a href="faculty_login.html" class="block px-4 py-2 hover:bg-gray-100">Faculty Login</a>
+            <a href="admin_login.html" class="block px-4 py-2 hover:bg-gray-100">Admin Login</a>
           </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              
-                  <a class="text-[#121416] text-sm font-medium leading-normal" href="homepage.html">Home</a>
-                 <a class="text-[#121416] text-sm font-medium leading-normal" href="student_login.html">Student Login</a>
-              
-                 <a class="text-[#121416] text-sm font-medium leading-normal" href="faculty_login.html">Faculty Login</a>
-            
-                 <a class="text-[#121416] text-sm font-medium leading-normal" href="admin_login.html">Admin Login</a>
-              
-                 <a class="text-[#121416] text-sm font-medium leading-normal" href="courses_page.html">Courses</a>
-          
-                 <a class="text-[#121416] text-sm font-medium leading-normal" href="notices_page.html">Notices</a>
-            </div>
-          </div>
-        </header>
+        </div>
+      </nav>
+    </header>
         <div class="gap-1 px-6 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col w-80">
-            <div class="flex h-full min-h-[700px] flex-col justify-between bg-white p-4">
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-3">
-                  <div
-                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYzEWtiSz5GgL7-KCWTl6pqzdgBIAugKkJ9UTszqouV81IpVRJEATXHTxTNU5qwqWNo_HABB1JKhK-qQa95ULhlRRl6mAJGMdDudZmZyHZajQZcqrcmgEwfc8emhOhATJdCIKNSqDM0AprnQoHtDdLbe2zGApCmItdqNYraT6r3qlCiC0Vq65sRdXzk3H1YNt9dyWjDQiLLZmNhm0DhkSjzUWdbnsf82CgiaEnZevTBRHHMdpHLb85aVD2YthTryD88xbPWXa2TOo");'
-                  ></div>
-                  <h1 class="text-[#111418] text-base font-medium leading-normal">Dr. Olivia Bennett</h1>
-                </div>
+            <aside class="w-80 bg-[#f9fafb] p-4 rounded-xl shadow-sm">
                 <div class="flex flex-col gap-2">
-                  <div class="flex items-center gap-3 px-3 py-2">
-                    <div class="text-[#111418]" data-icon="House" data-size="24px" data-weight="regular">
+                    <div class="flex items-center justify-center gap-1 mb-4">
+    <h1 class="text-[#111418] text-base font-medium leading-normal">Dr. Olivia Bennett</h1>
+    <div
+      class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDJYU6f0Ypwou2YYK5HyjQWgHqKlg4HBVscwH8icYKZ_ouf4spusOjmsn3jKiW8e2wQDj8VYrVFkSufFYcEp5XCXYso-Ctk2STYH47CU8IYZgd9Cp_lPJfoDh0WTpcVYIAVBaylqNyRzZG6J8zYVwwduVDAHF_JDEKAGVJpquLYgxUJaLFjT_ny-YCzUMS8ciUSjTT-WPitGyREtblO5nhTqVEkUNjIHvy79YtLgXKWSQ9ijkrlehfBCMiSznPT8h-XKW2KylHPlto");'
+    ></div>
+  </div>
+                    <div class="flex items-center gap-3 px-3 py-2 ">
+                    <div class="text-[#111418]" data-icon="House" data-size="24px" data-weight="fill">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                         <path
-                          d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"
+                          d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
                         ></path>
                       </svg>
                     </div>
@@ -72,11 +68,11 @@
   <p class="text-[#111418] text-sm font-medium leading-normal">Dashboard</p>
 </a>
                   </div>
-                  <div class="flex items-center gap-3 px-3 py-2">
-                    <div class="text-[#111418]" data-icon="PresentationChart" data-size="24px" data-weight="regular">
+                  <div class="flex items-center gap-3 px-3 py-2 ">
+                    <div class="text-[#111418]" data-icon="Presentation" data-size="24px" data-weight="regular">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                         <path
-                          d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176ZM104,120v24a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32-16v40a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32-16v56a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"
+                          d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176Z"
                         ></path>
                       </svg>
                     </div>
@@ -85,7 +81,7 @@
   <p class="text-[#111418] text-sm font-medium leading-normal">Courses</p>
 </a>
                   </div>
-                  <div class="flex items-center gap-3 px-3 py-2">
+                  <div class="flex items-center gap-3 px-3 py-2 ">
                     <div class="text-[#111418]" data-icon="File" data-size="24px" data-weight="regular">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                         <path
@@ -98,11 +94,11 @@
   <p class="text-[#111418] text-sm font-medium leading-normal">Assignments</p>
 </a>
                   </div>
-                  <div class="flex items-center gap-3 px-3 py-2">
-                    <div class="text-[#111418]" data-icon="ChartLine" data-size="24px" data-weight="regular">
+                  <div class="flex items-center gap-3 px-3 py-2 ">
+                    <div class="text-[#111418]" data-icon="PresentationChart" data-size="24px" data-weight="regular">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                         <path
-                          d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0v94.37L90.73,98a8,8,0,0,1,10.07-.38l58.81,44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,1-10.07.38L96.39,114.29,40,163.63V200H224A8,8,0,0,1,232,208Z"
+                          d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176ZM104,120v24a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32-16v40a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32-16v56a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"
                         ></path>
                       </svg>
                     </div>
@@ -111,11 +107,11 @@
   <p class="text-[#111418] text-sm font-medium leading-normal">Grades</p>
 </a>
                   </div>
-                  <div class="flex items-center gap-3 px-3 py-2">
-                    <div class="text-[#111418]" data-icon="ChatCircleDots" data-size="24px" data-weight="regular">
+                  <div class="flex items-center gap-3 px-3 py-2 ">
+                    <div class="text-[#111418]" data-icon="Chats" data-size="24px" data-weight="regular">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                         <path
-                          d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"
+                          d="M216,80H184V48a16,16,0,0,0-16-16H40A16,16,0,0,0,24,48V176a8,8,0,0,0,13,6.22L72,154V184a16,16,0,0,0,16,16h93.59L219,230.22a8,8,0,0,0,5,1.78,8,8,0,0,0,8-8V96A16,16,0,0,0,216,80ZM66.55,137.78,40,159.25V48H168v88H71.58A8,8,0,0,0,66.55,137.78ZM216,207.25l-26.55-21.47a8,8,0,0,0-5-1.78H88V152h80a16,16,0,0,0,16-16V96h32Z"
                         ></path>
                       </svg>
                     </div>
@@ -125,10 +121,10 @@
 </a>
                   </div>
                   <div class="flex items-center gap-3 px-3 py-2 rounded-full bg-[#f0f2f5]">
-                    <div class="text-[#111418]" data-icon="File" data-size="24px" data-weight="fill">
+                    <div class="text-[#111418]" data-icon="Folder" data-size="24px" data-weight="regular">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                         <path
-                          d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM152,88V44l44,44Z"
+                          d="M216,72H131.31L104,44.69A15.86,15.86,0,0,0,92.69,40H40A16,16,0,0,0,24,56V200.62A15.4,15.4,0,0,0,39.38,216H216.89A15.13,15.13,0,0,0,232,200.89V88A16,16,0,0,0,216,72ZM40,56H92.69l16,16H40ZM216,200H40V88H216Z"
                         ></path>
                       </svg>
                     </div>
@@ -151,10 +147,9 @@
 </a>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    
+              </aside>
+          <div class="layout-content-container flex flex-col max-w-8xl flex-1">
             <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight min-w-72">Resources</p></div>
             <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Templates</h3>
             <div class="p-4">
@@ -252,258 +247,3 @@
     </div>
   </body>
 </html>
-=======
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
-
-    <title>Faculty Resources</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-         <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#121416]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <h2 class="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em]">Academic Portal</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              
-                  <a class="text-[#121416] text-sm font-medium leading-normal" href="homepage.html">Home</a>
-                 <a class="text-[#121416] text-sm font-medium leading-normal" href="student_login.html">Student Login</a>
-              
-                 <a class="text-[#121416] text-sm font-medium leading-normal" href="faculty_login.html">Faculty Login</a>
-            
-                 <a class="text-[#121416] text-sm font-medium leading-normal" href="admin_login.html">Admin Login</a>
-              
-                 <a class="text-[#121416] text-sm font-medium leading-normal" href="courses_page.html">Courses</a>
-          
-                 <a class="text-[#121416] text-sm font-medium leading-normal" href="notices_page.html">Notices</a>
-            </div>
-          </div>
-        </header>
-        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col w-80">
-            <div class="flex h-full min-h-[700px] flex-col justify-between bg-white p-4">
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-3">
-                  <div
-                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYzEWtiSz5GgL7-KCWTl6pqzdgBIAugKkJ9UTszqouV81IpVRJEATXHTxTNU5qwqWNo_HABB1JKhK-qQa95ULhlRRl6mAJGMdDudZmZyHZajQZcqrcmgEwfc8emhOhATJdCIKNSqDM0AprnQoHtDdLbe2zGApCmItdqNYraT6r3qlCiC0Vq65sRdXzk3H1YNt9dyWjDQiLLZmNhm0DhkSjzUWdbnsf82CgiaEnZevTBRHHMdpHLb85aVD2YthTryD88xbPWXa2TOo");'
-                  ></div>
-                  <h1 class="text-[#111418] text-base font-medium leading-normal">Dr. Olivia Bennett</h1>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <div class="flex items-center gap-3 px-3 py-2">
-                    <div class="text-[#111418]" data-icon="House" data-size="24px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Dashboard</p> -->
-                      <a href="faculty_dashboard.html">
-  <p class="text-[#111418] text-sm font-medium leading-normal">Dashboard</p>
-</a>
-                  </div>
-                  <div class="flex items-center gap-3 px-3 py-2">
-                    <div class="text-[#111418]" data-icon="PresentationChart" data-size="24px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176ZM104,120v24a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm32-16v40a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm32-16v56a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Courses</p> -->
-                      <a href="faculty_courses.html">
-  <p class="text-[#111418] text-sm font-medium leading-normal">Courses</p>
-</a>
-                  </div>
-                  <div class="flex items-center gap-3 px-3 py-2">
-                    <div class="text-[#111418]" data-icon="File" data-size="24px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Assignments</p> -->
-                      <a href="faculty_assignments.html">
-  <p class="text-[#111418] text-sm font-medium leading-normal">Assignments</p>
-</a>
-                  </div>
-                  <div class="flex items-center gap-3 px-3 py-2">
-                    <div class="text-[#111418]" data-icon="ChartLine" data-size="24px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0v94.37L90.73,98a8,8,0,0,1,10.07-.38l58.81,44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,1-10.07.38L96.39,114.29,40,163.63V200H224A8,8,0,0,1,232,208Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Grades</p> -->
-                      <a href="faculty_grades.html">
-  <p class="text-[#111418] text-sm font-medium leading-normal">Grades</p>
-</a>
-                  </div>
-                  <div class="flex items-center gap-3 px-3 py-2">
-                    <div class="text-[#111418]" data-icon="ChatCircleDots" data-size="24px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Communication</p> -->
-                      <a href="faculty_communication.html">
-  <p class="text-[#111418] text-sm font-medium leading-normal">Communication</p>
-</a>
-                  </div>
-                  <div class="flex items-center gap-3 px-3 py-2 rounded-full bg-[#f0f2f5]">
-                    <div class="text-[#111418]" data-icon="File" data-size="24px" data-weight="fill">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM152,88V44l44,44Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Resources</p> -->
-                      <a href="faculty_resources.html">
-  <p class="text-[#111418] text-sm font-medium leading-normal">Resources</p>
-</a>
-                  </div>
-                  <div class="flex items-center gap-3 px-3 py-2">
-                    <div class="text-[#111418]" data-icon="User" data-size="24px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <!-- <p class="text-[#111418] text-sm font-medium leading-normal">Profile</p> -->
-                      <a href="faculty_profile.html">
-  <p class="text-[#111418] text-sm font-medium leading-normal">Profile</p>
-</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight min-w-72">Resources</p></div>
-            <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Templates</h3>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-xl">
-                <div class="flex flex-[2_2_0px] flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <p class="text-[#60758a] text-sm font-normal leading-normal">Template</p>
-                    <p class="text-[#111418] text-base font-bold leading-tight">Lecture Template</p>
-                    <p class="text-[#60758a] text-sm font-normal leading-normal">A template for creating engaging and informative lectures.</p>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#f0f2f5] text-[#111418] text-sm font-medium leading-normal w-fit"
-                  >
-                    <span class="truncate">Download</span>
-                  </button>
-                </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNthVI0jS5Cq7GwI99p-ZK5GLqMRN1xMndj5i8F1oCCURkRwFDjer9YmYjars3xTcPkV4iXwz7RJvjXTK-Dt16deqsFvafg3PfDVnez1AHoP8UaFk4O6BneBmuck-vL9ZBFN3w8IITL8eI_3stnwitBPr6qQIeKxNloh9cedKfCYrTg8kGXI5OTXnR2TyEzFGFI3vrX3RGVQycOFDI80uMtgZtZbBodio6Q1Po8RNVBrib4_saLe-DmJSbf1kphxAepgPuH5CDrBM");'
-                ></div>
-              </div>
-            </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-xl">
-                <div class="flex flex-[2_2_0px] flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <p class="text-[#60758a] text-sm font-normal leading-normal">Template</p>
-                    <p class="text-[#111418] text-base font-bold leading-tight">Syllabus Template</p>
-                    <p class="text-[#60758a] text-sm font-normal leading-normal">A template for creating a comprehensive and clear syllabus.</p>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#f0f2f5] text-[#111418] text-sm font-medium leading-normal w-fit"
-                  >
-                    <span class="truncate">Download</span>
-                  </button>
-                </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAhFU06yJl-6CoNWTZxzLosN0_nFWjGX6fxc1D8tnz-gWDkMVpaMsFvASAJa-TiVE28QBQcs3izgV9BB0TBn9wLRKamOXLKtuNu2NZfT7SowJi0QC3V5Dji55Xivw6-FkYDOBPllRHaXwawtarITU3rKBOxX9VXpxFh6FUXBdXsIhPxpo-N_8KLR6WMJYkEQnQyghnSyv6MqCR5yJKYxmOxFlgUrds2xqi1RLht1XOrH4HEgVmo7j1X_a9CKf_0GmHBP_OV0k4QPeE");'
-                ></div>
-              </div>
-            </div>
-            <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Guidelines</h3>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-xl">
-                <div class="flex flex-[2_2_0px] flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <p class="text-[#60758a] text-sm font-normal leading-normal">Guideline</p>
-                    <p class="text-[#111418] text-base font-bold leading-tight">Grading Guidelines</p>
-                    <p class="text-[#60758a] text-sm font-normal leading-normal">Guidelines for fair and consistent grading practices.</p>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#f0f2f5] text-[#111418] text-sm font-medium leading-normal w-fit"
-                  >
-                    <span class="truncate">View</span>
-                  </button>
-                </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBE0vU8k6Bwhk7N3c5Z303E-z-48SmwvYa2DJ5uMDeLAe3lQ8mRL8JABTBSyjJst1sI6g60JN6uJD09gD70DD0GEuJDOHYD814uw9vPuQrY_kC87wbeg64dTkCfmF9KfUzk3yZpEn8LowsbCPwl2IbpBFL3l4-E66n1Zbp-xMkTSkkI4gZEdtvcY_k_nr3JSURB68__ISIu8sClctqp6vXgAaHWeazAtDA9K4iLYYp5JkqTKbngDCfCFIdhl1EOOL0NjoLWntgE-mY");'
-                ></div>
-              </div>
-            </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-xl">
-                <div class="flex flex-[2_2_0px] flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <p class="text-[#60758a] text-sm font-normal leading-normal">Guideline</p>
-                    <p class="text-[#111418] text-base font-bold leading-tight">Course Design Guidelines</p>
-                    <p class="text-[#60758a] text-sm font-normal leading-normal">Guidelines for designing effective and engaging courses.</p>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#f0f2f5] text-[#111418] text-sm font-medium leading-normal w-fit"
-                  >
-                    <span class="truncate">View</span>
-                  </button>
-                </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-1EWYwtf28G_UY8jDtOri58teyhqdyz5U5Cwb1bOfvW8uvwiYTbpCo-VzoWMbHAqvIisJ0fQzYnLN_66dZpf6jyf_pBZsouKE12xWoJZN3APfriB6KZGa3K2auIzKF6SMAs2KqHXRD6LchqiAR5rGchnvXPKquxtIr2-oFBVlxEFpsmV_pjvR-gkJj4cGM1MRVyUwWrb5T5kcPBnB3FE5HmoEEmiU9-JnaZ9OhYwy2yA9ZmRfPh5fEV1HWkVKgAmiR_Fdmzh0XFM");'
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-         <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
-                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
-                <a class="text-[#6a7581] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
-              </div>
-              <p class="text-[#6a7581] text-base font-normal leading-normal">© 2025 IITVerse. All rights reserved.</p>
-            </footer>
-      </div>
-    </div>
-  </body>
-</html>
->>>>>>> edb1f13 (homepage.html change)
