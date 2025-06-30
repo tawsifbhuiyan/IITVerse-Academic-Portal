@@ -17,28 +17,6 @@
         font-family: 'Inter', sans-serif;
       }
     </style>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
-      function handleLogin(event) {
-        // Prevent form from submitting and reloading the page
-        event.preventDefault();
-
-        // Get username and password values
-        const adminID = document.getElementById("id").value;
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
-
-        // Check if the entered username and password match
-        if (password === "1234") {
-          // Redirect to student_dashboard.html if correct
-          window.location.href = "student_dashboard.html";
-        } else {
-          // Show alert if the login details are incorrect
-          alert("Incorrect password!");
-        }
-      }
-    </script>
   </head>
   <body class="bg-white min-h-screen">
     <!-- Navbar -->
@@ -103,9 +81,10 @@
           <div>
             <label class="block text-sm font-medium text-gray-700">Admin ID</label>
             <input
+            id="id"
               type="number"
               name="id"
-              placeholder="info@example.com"
+              placeholder="Enter Your ID"
               required
               class="mt-1 w-full px-4 py-3 border border-gray-200 rounded-md bg-[#fff7f1] text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
@@ -113,9 +92,10 @@
           <div>
             <label class="block text-sm font-medium text-gray-700">Email Address</label>
             <input
+            id="email"
               type="email"
               name="email"
-              placeholder="info@example.com"
+              placeholder="Enter Your Email"
               required
               class="mt-1 w-full px-4 py-3 border border-gray-200 rounded-md bg-[#fff7f1] text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
@@ -123,6 +103,7 @@
           <div>
             <label class="block text-sm font-medium text-gray-700">Password</label>
             <input
+            id="password"
               type="password"
               name="password"
               placeholder="********"
@@ -183,5 +164,24 @@
     </lottie-player> -->
   </div>
     </section>
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+<script>
+  function handleLogin(event) {
+    event.preventDefault();
+
+    const adminID = document.getElementById("id").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (adminID === "1234" && password === "1234") {
+      window.location.href = "admin_dashboard.html";
+    } else {
+      alert("Incorrect password!");
+    }
+  }
+</script>
   </body>
 </html>
